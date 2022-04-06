@@ -40,7 +40,6 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    border: solid 1px black;
 }
 
 
@@ -84,6 +83,25 @@ main{
     font-family: 'Roboto', sans-serif;
     
 }
+
+/*------------------ */
+
+.photo{
+    width: 200px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.images{
+    display: flex;
+
+}
+
+.cont-images{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 

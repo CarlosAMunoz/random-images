@@ -21,17 +21,23 @@
     </header>
     <main>
 
-        <div class="container-welcome"> 
-            <h1 class="welcome__text"> Welcome! :) <br>
+        <div class="container-welcome" id="container-welcome"> 
+            <h1 class="welcome__text" id="welcome__text"> Welcome! :) <br>
             This is a little app to get random images. 
             </h1>
 
-            <button class="button button__get"> Get images  </button>
+            <button class="button button__get" id="button__get"> Get images  </button>
        </div>
+
+        <div id=images class="images"> 
+            <div id="cont-images1" class="cont-images"> </div>
+            <div id="cont-images2" class="cont-images"> </div>
+            <div id="cont-images3" class="cont-images"> </div>
+        </div> 
 
 
         <!-- <div> <img src="./assets/icons/reload.svg" alt=""> </div> -->
     </main>
-    <script src="./script.js"> </script>
+    <script src="./action.js"> </script>
 </body>
 </html>

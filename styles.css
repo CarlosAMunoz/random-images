@@ -13,6 +13,7 @@
     --back-color: #BEAEB7;
     --blue-color: #316EAC;
     --just-white: #FFFFFF;
+    --blue2-color: #6bc8f2;
 }
 
 
@@ -44,13 +45,14 @@ body{
 
 
 
-main{
+.main{
     height: 65vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    align-items: center; 
 }
+
+
 
 .container-welcome{
     height: 40vh;
@@ -86,29 +88,29 @@ main{
 
 /*------------------ */
 
-.photo{
-    width: 200px;
-    border-radius: 15px;
-    margin: 10px;
-}
-
-.images{
-    display: flex;
-
-}
-
 .cont-images{
+    width: 100%;
+
+    align-content: center;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
+.photo{
+    width: 90vw;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
 
 
 
 /* Utilizamos la pseudoClase :hover para que no se aplique en teléfonos o tablets */
 @media (hover: hover){
-    .button__get{
+    .button__get:hover{
         cursor: pointer;
+        background-color: var(--blue2-color);
     }
 }
 

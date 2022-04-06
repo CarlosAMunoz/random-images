@@ -40,8 +40,10 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2%;
-
+    border: solid 1px black;
 }
+
+
 
 main{
     height: 65vh;
@@ -85,11 +87,34 @@ main{
 
 
 
-
-
 /* Utilizamos la pseudoClase :hover para que no se aplique en teléfonos o tablets */
 @media (hover: hover){
     .button__get{
         cursor: pointer;
     }
+}
+
+
+/*  Meida Query para escalación de tamaños */ 
+@media screen and (min-width: 1000px) {
+
+    .header{
+        height: 20vh;
+        padding: 20px;
+    }
+    .header__logo{
+        height: 100%;
+    }
+
+    .button__get{
+        width: 60%;
+        height: 50px;
+        font-size: 30px;
+
+    }
+    .container-welcome{
+        font-size: 1.6rem;
+    }
+
+
 }

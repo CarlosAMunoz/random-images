@@ -13,11 +13,12 @@ const createImageNodes = (columnas) => {
   
   const image = document.createElement("img");
   image.src = `https://source.unsplash.com/collection/${random()}`;
-  image.className = "photo"
-  console.log(image.src)
-  let contImages = document.getElementById(`cont-images${columnas}`)
+  image.className = "photo";
+  console.log(image.src);
+  let contImages = document.getElementById(`cont-images${columnas}`);
   contImages.appendChild(image);
 }
+
 
 
 //Función para imprimir las imágenes

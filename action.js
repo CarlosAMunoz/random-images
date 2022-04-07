@@ -7,16 +7,15 @@ const contDivs = document.getElementById("images");
 import * as all from "./script.js";
 let cantidad = 10;
 
-
+console.log(window.innerWidth);
 
 const clearWelcomeItem = () => {
     main.classList.remove("main");
     main.className = "under-main"
-
     main.removeChild(contWelcome);
 
 
-    if(window.screen.width >= 1000){
+    if(window.innerWidth >= 1000){
         const div = document.createElement("div");
         const div2 = document.createElement("div");
         div.className = "cont-images";
@@ -33,11 +32,11 @@ const clearWelcomeItem = () => {
         all.printImages("4", cantidad);
 
     }else
-    if (window.screen.width >= 700){
+    if (window.innerWidth >= 700){
         all.printImages("1", cantidad);
         all.printImages("2", cantidad);
     }else
-    if (window.screen.width < 700) {
+    if (window.innerWidth < 700) {
         all.printImages("1", cantidad);
     }    
        
